@@ -51,12 +51,12 @@ function showMovies(movies) {
 }
 
 function getClassByRate(vote) {
-    if (vote >= 8) {
-        return "green";
-    } else if (vote >= 5) {
-        return "orange";
-    } else {
+    if (vote >= 7) {
+        return "black";
+    } else if (vote >= 4) {
         return "red";
+    } else {
+        return "blue";
     }
 }
 
