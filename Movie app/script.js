@@ -50,25 +50,3 @@ function showMovies(movies) {
         main.appendChild(movieEl);
     });
 }
-
-function getClassByRate(vote) {
-    if (vote >= 7) {
-        return "blue";
-    } else if (vote >= 4) {
-        return "green";
-    } else {
-        return "yellow";
-    }
-}
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const searchTerm = search.value;
-
-    if (searchTerm) {
-        getMovies(SEARCHAPI + searchTerm);
-
-        search.value = "";
-    }
-});
